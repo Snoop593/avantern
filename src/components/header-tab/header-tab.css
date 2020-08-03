@@ -1,0 +1,29 @@
+@import './../../vars.css';
+
+.header-tab {
+    display: flex;
+    font-size: var(--font-size-m);
+
+    &__link {
+        display: flex;
+        padding: 44px var(--margin-medium) 44px 0;
+        color: var(--color-gray);
+    }
+
+    &__is-selected {
+        padding-top: calc(44px - 5px);
+        color: var(--color-main);
+        border-top: 5px solid var(--color-main);
+    }
+
+    &__link:hover {
+        text-decoration: none;
+    }
+
+    img {
+        width: 30px;
+        height: 30px;
+        margin-right: var(--margin-medium); 
+    }
+}
+    

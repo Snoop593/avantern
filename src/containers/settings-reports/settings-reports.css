@@ -1,0 +1,88 @@
+@import './../../vars.css';
+
+.settings-reports {
+
+    font-size: 20px;
+
+    & .heading {
+        margin-top: 25px;
+        margin-bottom: var(--margin-large);
+    }
+
+    &__row{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    &__row + &__row {
+        margin-top: 30px;
+    }
+
+    &__form-control {
+        width: 100%;
+    }
+
+    &__link-group {
+        display: flex;
+    }
+
+    &__parameters-group {
+        display: flex;
+    }
+
+    &__parameters-group &__input {
+        width: 150px;
+    }
+
+    &__input +  &__input{
+        margin-left: var(--margin-medium);
+    }
+
+    & .label +  &__form-control,
+    & .label +  &__link-group,
+    & .label +  &__input,
+    & .label + &__parameters-group {
+        margin-top: 15px    ;
+    }
+
+    &__row-item, &__column {
+        min-width: 400px;
+    }
+
+    &__column {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__column-item {
+        display: flex;
+        flex-direction: column;
+        width: 200px;
+    }
+
+    &__column-item + &__column {
+        margin-left: 30px;
+    }
+
+    &__row-item + &__row-item,
+    &__column + &__column{
+        margin-left: var(--margin-medium);
+    }
+    
+    & &__link {
+        color: var(--color-main);
+        font-size: var(--font-size-s);
+        border-bottom: 1px dashed var(--color-main);
+    }
+    
+    &__link + &__link {
+        margin-left: var(--margin-small);
+    }
+
+    & &__button {
+        margin-top: 30px;
+        font-weight: bold;
+        border-radius: var(--border-radius-main);
+    }
+}

@@ -1,0 +1,63 @@
+@import './../../vars.css';
+
+.settings-tab {
+
+    &__menu {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        margin-top: 25px;
+    }
+    
+    &__link-group {
+        display: flex;
+        box-sizing: border-box;
+        margin-left: 60px;
+        padding: 0 40px;
+        background: linear-gradient(173.96deg, rgba(0, 0, 0, 0.4) 0%, rgba(255, 255, 255, 0.4) 100%), var(--color-background);
+        background-blend-mode: soft-light, normal;
+        border: var(--border-main);
+        border-radius: var(--border-radius-main);
+        box-shadow: var(--box-shadow-main);
+    }
+
+    & &__button {
+        margin-left: 120px;
+        font-weight: bold;
+        border-radius: var(--border-radius-main);
+    }
+    
+    & &__link {
+        padding: var(--margin-medium) 0;
+        color: var(--color-main);
+    }
+    
+    &__link + &__link {
+        margin-left: var(--margin-medium);
+    }
+    
+    &__table {
+        width: 100%;
+        margin: 100px var(--margin-medium) var(--margin-medium) var(--margin-medium);
+    }
+    
+    &__table-item, &__table-item_is-selected {
+        cursor: pointer;
+    }
+    
+    &__table-item_is-selected {
+        background-color: var(--color-main);
+    }
+    
+    &__table-item_is-selected .MuiTableCell-body {
+        color: var(--color-white);
+    }
+    
+    & &__link_is-selected {
+        padding-bottom: 15px;
+        border-bottom: 5px solid var(--color-main);
+    }
+}
+
+

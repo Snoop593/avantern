@@ -1,0 +1,53 @@
+@import './../../vars.css';
+
+.settings-users {
+    font-size: 20px;
+
+    & .heading {
+        margin-top: 25px;
+        margin-bottom: var(--margin-large);
+    }
+
+    &__row {
+        display: flex;
+        flex-direction: row;
+    }
+
+    &__checkbox-group {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__row + &__row,
+    &__row + &__checkbox-group {
+        margin-top: 30px;
+    }
+
+    &__checkbox-group-item {
+        margin-top: 10px;
+    }
+
+    &__checkbox + &__checkbox {
+        margin-left: 33px;
+    }
+
+    &__column {
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+    }
+    
+    &__column + &__column {
+        margin-left: 30px;
+    }    
+
+    & .label + &__input {
+        margin-top: 15px;
+    }
+
+    & &__button {
+        margin-top: 90px;
+        font-weight: bold;
+        border-radius: var(--border-radius-main);
+    }
+}

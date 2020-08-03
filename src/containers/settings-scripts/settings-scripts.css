@@ -1,0 +1,56 @@
+@import './../../vars.css';
+
+.settings-scripts {
+    font-size: 20px;
+
+    & .heading {
+        margin-top: 25px;
+        margin-bottom: var(--margin-large);
+    }
+
+    &__row {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: var(--margin-medium);
+    }
+
+    &__column {
+        display: flex;
+        flex-direction: column;
+        min-width: 400px;
+    }
+    
+    &__column + &__column {
+        margin-left: var(--margin-medium);
+    }    
+    
+    &__checkbox-group {
+        margin: 45px 0;
+    }
+
+    &__row-item {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 50%;
+    }
+        
+    &__select {
+        background-color: var(--color-white);
+    }
+
+    & .label + &__form-control, & .label + &__input {
+        margin-top: var(--margin-medium);
+    }
+
+    & &__input-number {
+        width: 80px;
+        margin: 0 15px;
+    }
+    
+    & &__button {
+        margin-top: 60px;
+        font-weight: bold;
+        border-radius: var(--border-radius-main);
+    }
+}

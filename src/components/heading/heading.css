@@ -1,0 +1,7 @@
+@import './../../vars.css';
+
+.heading {
+    color: var(--color-heading);
+    font-size: var(--font-size-xxl);
+    line-height: var(--line-height);
+}

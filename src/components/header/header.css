@@ -1,0 +1,19 @@
+@import './../../vars.css';
+
+.header {
+    display: flex;
+    align-items: center;
+    background-color: var(--color-background);
+
+    &__row{
+        display: flex;
+    }
+}
+
+.logo {
+    margin: 42px 72px 46px 102px;
+}
+
+.header-tab + .header-tab {
+    margin-left: 64px;
+}

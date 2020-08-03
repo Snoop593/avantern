@@ -1,0 +1,30 @@
+:root {
+    --font: Futura PT, sans-serif;
+    --font-weight: 500;
+    --line-height: 82px;
+
+    --color-main: #D50037;
+    --color-background: #FAFBFF;
+    --color-gray: #666666;
+    --color-heading: #373737;
+    --color-white: #ffffff;
+    --color-black: #000000;
+    --color-hint: #EFEFEF;
+
+    --margin-large: 60px;
+    --margin-medium: 20px;
+    --margin-small: 10px;
+
+    --font-size-xxxl: 96px;
+    --font-size-xxl: 64px;
+    --font-size-xl: 48px;
+    --font-size-l: 32px;
+    --font-size-m: 24px;
+    --font-size-s: 18px;
+    --font-size-xs: 14px;
+
+    --border-radius-main: 10px;
+
+    --border-main: 1px solid #EBECF0;
+    --box-shadow-main: 5px 5px 10px rgba(20, 22, 21, 0.2);
+}

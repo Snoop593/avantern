@@ -1,0 +1,55 @@
+@import './../../vars.css';
+
+.authorization {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 100vh;
+    background-color: var(--color-main);
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+        padding: 20px 100px 48px 100px;
+        background: linear-gradient(173.96deg, rgba(0, 0, 0, 0.4) 0%, rgba(255, 255, 255, 0.4) 100%), var(--color-background);
+        background-blend-mode: soft-light, normal;
+        border: var(--border-main);
+        border-radius: var(--border-radius-main);
+        box-shadow: var(--box-shadow-main);
+    }
+
+    &__row {
+        display: flex;
+        flex-direction: row;
+    }
+
+    &__row + &__row {
+        margin-top: var(--margin-medium);
+    }
+
+    &__button {
+        width: 250px;
+        font-weight: bold;
+        border-radius: var(--border-radius-main);
+    }
+
+    &__input {
+        width: 250px;
+    }
+
+    & .heading {
+        margin-bottom: 30px;
+    }
+
+    &__logo{
+        display: flex;
+    }
+
+    &__logo > img + img {
+        margin-left: 40px;
+    }
+}

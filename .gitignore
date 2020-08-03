@@ -1,0 +1,8 @@
+.idea/
+.vscode/
+node_modules/
+.build/
+coverage/
+npm-debug.log
+test-results.xml
+tmp-package.json

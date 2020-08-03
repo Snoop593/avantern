@@ -1,0 +1,59 @@
+@import './../../vars.css';
+
+.settings-directory {
+    font-size: 20px;
+
+    & .heading {
+        margin-top: 25px;
+        margin-bottom: var(--margin-large);
+    }
+
+    &__column {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__column + &__column {
+        margin-top: var(--margin-large);
+    }
+
+    &__column-item + &__column-item {
+        margin-top: var(--margin-large);
+    }
+    
+    &__row {
+        display: flex;
+        flex-direction: row;
+    }
+
+    &__row + &__row {
+        margin-top: var(--margin-medium);
+    }
+
+    &__row-item + &__row-item {
+        margin-left: var(--margin-medium);
+    }
+
+    &__input {
+        width: 400px;
+    }
+
+    &__input-number {
+        width: 100px;
+    }
+
+    & .label + &__input,
+    & .label + &__row,
+    &__column + &__button-group {
+        margin-top: var(--margin-medium);
+    }
+
+    & &__button {
+        font-weight: bold;
+        border-radius: var(--border-radius-main);
+    }
+
+    &__button + &__button{
+        margin-top: 60px;
+    }
+}

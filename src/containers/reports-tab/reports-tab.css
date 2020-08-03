@@ -1,0 +1,54 @@
+@import './../../vars.css';
+
+.reports-tab {
+
+    & .heading {
+        margin-top: 25px;
+    }
+
+    &__settings-menu {
+        display: flex;
+        align-items: center;
+        margin-top: var(--margin-medium);
+    }
+    
+    &__select-group {
+        box-sizing: border-box;
+        padding: var(--margin-medium);
+        background: linear-gradient(173.96deg, rgba(0, 0, 0, 0.4) 0%, rgba(255, 255, 255, 0.4) 100%), var(--color-background);
+        background-blend-mode: soft-light, normal;
+        border: var(--border-main);
+        border-radius: var(--border-radius-main);
+        box-shadow: var(--box-shadow-main);
+    }
+    
+    & &__button {
+        margin-left: 60px;
+        font-weight: bold;
+        border-radius: var(--border-radius-main);
+    }
+    
+    &__link-group {
+        display: flex;
+        margin-top: var(--margin-medium);
+        margin-left: var(--margin-medium); 
+    }
+    
+    &__select, &__date {
+        width: 250px;
+        background-color: var(--color-white);
+    }
+    
+    & &__date {
+        margin-left: 30px;
+    }
+    
+    & &__link {
+        color: var(--color-main);
+        border-bottom: 1px dashed var(--color-main);
+    }
+    
+    &__link + &__link {
+        margin-left: 15px;
+    }
+}

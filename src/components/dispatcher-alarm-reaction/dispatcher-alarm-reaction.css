@@ -1,0 +1,36 @@
+@import './../../vars.css';
+
+.dispatcher-alarm-reaction {
+    display: flex;
+    flex-direction: column;
+    padding: var(--margin-medium) 40px 40px 40px;
+    background: linear-gradient(150.35deg, rgba(0, 0, 0, 0.4) 0%, rgba(255, 255, 255, 0.4) 100%), var(--color-background);
+    background-blend-mode: soft-light, normal;
+    border: var(--border-main);
+    border-radius: var(--border-radius-main);
+    box-shadow: var(--box-shadow-main);
+
+    &__select {
+        width: 250px;
+        background-color: var(--color-white);
+    }
+
+    &__select, &__input-label {
+        margin: var(--margin-medium) 0;
+    }
+    
+    & .label + & .label {
+        margin-top: var(--margin-medium);
+    }
+    
+    &__textarea {
+        height: 200px;
+        margin-bottom: var(--margin-medium);
+    }
+
+    & &__button {
+        width: 250px;
+        font-weight: bold;
+        border-radius: var(--border-radius-main);
+    }
+}

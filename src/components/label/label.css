@@ -1,0 +1,44 @@
+@import './../../vars.css';
+
+.label {
+    font-size: var(--font-size-s);
+    
+    &__required {
+        vertical-align: top;
+    }    
+
+    &_size_s {
+        font-size: var(--font-size-s);
+    }
+    
+    &_size_xs {
+        font-size: var(--font-size-xs);
+    }
+    
+    &_size_m {
+        font-size: var(--font-size-m);
+    }
+    
+    &_size_l {
+        font-size: var(--font-size-l);
+    }
+
+    &_size_xl {
+        font-size: var(--font-size-xl);
+    }
+    
+    &_size_xxl {
+        font-size: var(--font-size-xxl);
+    }
+
+    &_is-strong {
+        font-weight: bold;
+    }
+
+    & img {
+        width: 20px;
+        height: 20px;
+        margin-right: 8px;
+    }
+}
+

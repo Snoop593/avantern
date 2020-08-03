@@ -1,0 +1,8 @@
+@import './../../vars.css';
+
+.error-page {
+    font-size: var(--font-size-xxxl);
+    text-align: center;
+    color: var(--color-gray);
+    margin-top: var(--margin-large);
+}

@@ -1,0 +1,19 @@
+@import './../../vars.css';
+
+.table-item {
+
+    &_is-selected {
+        background-color: var(--color-main);
+    }
+    
+    &_is-selected .MuiTableCell-body {
+        color: var(--color-white);
+    }
+
+    &__button {
+        background: transparent;
+        border: 0;
+        outline: none;
+        cursor: pointer;
+    }
+}

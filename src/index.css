@@ -1,0 +1,92 @@
+@import './vars.css';
+
+@font-face {
+    font-family: Future PT;
+    src: url('./fonts/FuturaPT-Medium.ttf');
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url('./fonts/Roboto-Light.ttf');
+}
+
+@font-face {
+    font-family: GothamPro;
+    src: url('./fonts/GothamPro-LightItalic.ttf');
+}
+
+.MuiFormLabel-root, .MuiInputBase-input, .MuiInputBase-root, .MuiTypography-body1 {
+    color: var(--color-gray) !important;
+    font-family: inherit !important;
+}
+
+.MuiSelect-select:focus {
+    background-color: var(--color-white);
+}
+
+.MuiTableCell-head {
+    color: var(--color-black) !important;
+    font-weight: bold !important;
+}
+
+.MuiTableCell-root {
+    font-size: var(--font-size-s) !important;
+    font-family: inherit !important;
+}
+
+.MuiTableHead-root {
+    border-bottom: 3px solid var(--color-black);
+}
+
+.MuiButton-root {
+    width: 250px;
+    height: 50px;
+    color: var(--color-white) !important;
+    font-family: inherit !important;
+    background-color: var(--color-main) !important;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    font-weight: var(--font-weight);
+    font-family: var(--font);
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+    text-decoration: none;
+    background-color: transparent;
+}
+
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}

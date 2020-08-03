@@ -1,0 +1,25 @@
+@import './../../vars.css';
+
+.picture-hint {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: var(--margin-medium);
+
+    &__title {
+        margin-top: var(--margin-large);
+        color: var(--color-hint);
+        font-size: var(--font-size-xxxl);
+        font-family: Roboto, sans-serif;
+    }
+
+    &__image {
+        display: flex;
+        justify-content: start;
+        margin-top: 150px;
+        margin-left: var(--margin-large);
+    }
+
+}

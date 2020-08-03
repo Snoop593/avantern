@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <base href="<%- contextRoot %>">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1, initial-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Cache-Control" content="no-store">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <title><%- pageTitle %></title>
+
+    <link rel="apple-touch-icon" sizes="60x60" href="<%= contextRoot %>assets/static/media/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="<%= contextRoot %>assets/static/media/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="<%= contextRoot %>assets/static/media/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="<%= contextRoot %>assets/static/media/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="<%= contextRoot %>assets/static/media/apple-touch-icon-180x180.tiff">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="<%= contextRoot %>assets/static/media/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="<%= contextRoot %>assets/static/media/favicon-16x16.png">
+    <link rel="mask-icon" href="<%= contextRoot %>assets/static/media/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="icon" type="image/x-icon" href="<%= contextRoot %>assets/static/media/favicon.ico">
+    <link rel="manifest" href="<%= contextRoot %>assets/static/media/manifest.json" />
+    <meta name="msapplication-config" content="<%= contextRoot %>assets/static/media/browserconfig.xml">
+    <meta name="application-name" content="<%- appName %>">
+    <meta name="version" content="<%- appVersion %>" />
+    <%- cssFiles.map(function(f) { return '<link rel="stylesheet" href="' + f + '" key="' + f + '"></link>'}).join("") %>
+</head>
+
+<body>
+    <div id="react-app"><%- content %></div>
+    <%- jsFiles.map(function(f) { return '<script type="text/javascript" defer="true" src="' + f + '" key="' + f + '"></script>'}).join("") %>
+    <script type="text/javascript">document.addEventListener(
+                'DOMContentLoaded',
+                function () {
+                    window.__main(<%- state %>);
+                }
+            );
+    </script>
+</body>
+
+</html>
